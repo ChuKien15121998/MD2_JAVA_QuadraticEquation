@@ -16,17 +16,6 @@ public class Main {
         double c = input.nextDouble();
 
         QuadraticEquation PTB2 = new QuadraticEquation(a, b, c);
-
-        double delta = PTB2.getDiscriminant();
-
-        if (delta <  0) {
-            System.out.println("The equation has no roots");
-        } else if (delta == 0) {
-            System.out.println("The equation has 2 roots r1 = r2 = " + PTB2.getRoot1());
-        } else {
-            double r1 = PTB2.getRoot1();
-            double r2 = PTB2.getRoot2();
-            System.out.println("The equation has 2 roots r1 = " + r1 + " , r2 = " + r2);
-        }
+        System.out.println(PTB2.toString());
     }
 }
